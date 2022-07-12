@@ -21,12 +21,12 @@ const IndexPage = () => {
   return (
     <div className="text-slate-800">
       <main className="bg-gradient-to-r from-cyan-500 to-blue-500">
-        <title>Home Page</title>
+        <title>Piotr Chmielewski</title>
         <section className="px-6 py-12 flex justify-evenly h-screen">
           <div className="self-center border-1 rounded-lg bg-slate-800 text-white p-3 md:p-6">
             <h1 className="text-xl md:text-4xl capitalize tracking-widest font-bold mb-8 md:md-16" id="home">Hi, I'm Piotr Chmielewski</h1>
             <p className="text-md md:text-2xl tracking-wide font-semibold max-w-2xl">
-              I'm like a swiss army knife when it comes to solving it solution for your bussiness.
+              I'm specialized with solving business problems with current technologies.
               Feel free to contact me using the <a href="#contact" className="underline underline-offset-1 text-cyan-500 hover:text-cyan-700">form</a>
             </p>
           </div>
