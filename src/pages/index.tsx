@@ -121,6 +121,16 @@ const IndexPage = () => {
                 Here is <a className="underline underline-offset-1 text-cyan-500 hover:text-cyan-700" href="https://divident.github.io/crowd-found/" target="_blank">link</a> to the application.
               </p>
             </div>
+            <div className="bg-slate-800 border-4 border-pink-600 text-white p-4 rounded-lg h-full">
+              <h2 className="mb-2 text-xl font-medium capitalize">Pomodoro App</h2>
+              <p>
+                A pomodoro application helps to make short or longer breaks during work periods. 
+                The idea is based on a time management method developed by Francesco Cirillo.
+                It uses a kitchen timer to break work into intervals, typically 25 minutes in length, separated by short breaks.
+                The application has rich customization settings allowing for changing theme color and font
+                You can try it here <a className="underline underline-offset-1 text-cyan-500 hover:text-cyan-700" href="http://ec2-18-116-74-88.us-east-2.compute.amazonaws.com/pomodoro/" target="_blank">link</a> to the application.
+              </p>
+            </div>
           </div>
         </section>
         <section className="p-6">
