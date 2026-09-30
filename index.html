@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Piotr Chmielewski</title>
   <meta name="description" content="Piotr Chmielewski — software developer building web applications, cloud deployments and marketing analytics.">
@@ -17,21 +18,9 @@
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    // Mark JS as available and apply a saved theme before first paint to avoid a flash.
-    document.documentElement.classList.add("js");
-    try {
-      var t = localStorage.getItem("theme");
-      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
-    } catch (e) {}
-  </script>
+  <script src="js/theme-init.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ED6WG01FV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-6ED6WG01FV");
-  </script>
+  <script src="js/analytics.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
