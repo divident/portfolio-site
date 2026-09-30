@@ -1,0 +1,13 @@
+{
+  "name": "Piotr Chmielewski",
+  "short_name": "Portfolio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#0f172a",
+  "icons": [
+    { "src": "images/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "images/icon.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
