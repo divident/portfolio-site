@@ -330,14 +330,61 @@ section[id] { scroll-margin-top: var(--header-h); }
 
 .hero-cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
 
-.hero-art img {
-  width: min(100%, 420px);
+/* ---------- Hero illustration ---------- */
+.hero-illustration {
+  display: block;
+  width: min(100%, 480px);
+  height: auto;
   margin-inline: auto;
-  filter: drop-shadow(0 20px 40px rgb(59 130 246 / 0.25));
-  animation: float 6s ease-in-out infinite;
+  overflow: visible;
 }
-@keyframes float {
-  50% { transform: translateY(-14px); }
+.hi-surface { fill: var(--surface); stroke: var(--border); stroke-width: 1.5; }
+.hi-bar { fill: var(--bg-alt); }
+.hi-tab { fill: var(--surface); }
+.hi-lineno { fill: var(--muted); opacity: 0.3; }
+.hi-pink { fill: var(--highlight); }
+.hi-blue { fill: #3b82f6; }
+.hi-cyan { fill: #06b6d4; }
+.hi-muted { fill: var(--muted); opacity: 0.45; }
+.hi-cursor { fill: var(--highlight); animation: blink 1s steps(1) infinite; }
+.hi-halo { fill: url(#icon-gradient); opacity: 0.12; }
+.hi-floor { fill: #0f172a; opacity: 0.08; transform-box: fill-box; transform-origin: center; animation: floor 6s ease-in-out infinite; }
+.hi-icon { fill: none; stroke: url(#icon-gradient); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.hi-icon .hi-trend { stroke: var(--highlight); }
+
+.hi-window { animation: float 6s ease-in-out infinite; }
+
+/* Code "types" in line by line, holds, then wipes and starts over. */
+.hi-line {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: type-line 9s ease-out infinite backwards;
+  animation-delay: calc(var(--i) * 0.4s);
+}
+
+.hi-badge { animation: bob-badge 5s ease-in-out infinite; animation-delay: var(--d); }
+.hi-spark {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: twinkle 3s ease-in-out infinite;
+  animation-delay: var(--d);
+}
+
+@keyframes float { 50% { transform: translateY(-12px); } }
+@keyframes floor { 50% { transform: scaleX(0.85); opacity: 0.05; } }
+@keyframes type-line {
+  0%       { transform: scaleX(0); opacity: 1; }
+  5%       { transform: scaleX(1); }
+  75%      { transform: scaleX(1); opacity: 1; }
+  82%, 100% { transform: scaleX(1); opacity: 0; }
+}
+@keyframes bob-badge {
+  0%, 100% { transform: translate(0, 0); }
+  50%      { transform: translate(0, -10px); }
+}
+@keyframes twinkle {
+  0%, 100% { transform: scale(0.4) rotate(0deg); opacity: 0.3; }
+  50%      { transform: scale(1) rotate(45deg); opacity: 1; }
 }
 
 /* ---------- Sections ---------- */
@@ -576,7 +623,7 @@ html:not(.js) .contact-form { display: none; }
   .hero-text { order: 2; }
   .hero .lead { margin-inline: auto; }
   .hero-cta { justify-content: center; }
-  .hero-art img { width: min(70%, 280px); }
+  .hero-illustration { width: min(85%, 340px); }
   .grid-2 { grid-template-columns: 1fr; }
 
   /* Collapsible menu, only when JS can toggle it. */

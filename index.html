@@ -10,7 +10,7 @@
   <meta property="og:title" content="Piotr Chmielewski">
   <meta property="og:description" content="I specialize in leveraging modern technologies to solve complex business challenges.">
   <meta property="og:url" content="https://divident.github.io/portfolio-site/">
-  <meta property="og:image" content="https://divident.github.io/portfolio-site/images/programmer.png">
+  <meta property="og:image" content="https://divident.github.io/portfolio-site/images/icon.png">
   <link rel="canonical" href="https://divident.github.io/portfolio-site/">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" sizes="512x512" href="images/icon.png">
@@ -89,7 +89,67 @@
           </div>
         </div>
         <div class="hero-art reveal">
-          <img src="images/programmer.png" alt="A programmer" width="512" height="512">
+          <svg class="hero-illustration" viewBox="0 0 480 420" role="img" aria-label="Animated illustration of a code editor surrounded by cloud, chart and code icons">
+            <defs>
+              <filter id="hi-shadow" x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#3b82f6" flood-opacity="0.22"/>
+              </filter>
+            </defs>
+
+            <circle class="hi-halo" cx="240" cy="200" r="175"/>
+            <ellipse class="hi-floor" cx="240" cy="378" rx="150" ry="12"/>
+
+            <g class="hi-window" filter="url(#hi-shadow)">
+              <rect class="hi-surface" x="70" y="76" width="340" height="244" rx="16"/>
+              <path class="hi-bar" d="M70 110V92a16 16 0 0 1 16-16h308a16 16 0 0 1 16 16v18z"/>
+              <circle cx="92" cy="93" r="5" fill="#f472b6"/>
+              <circle cx="109" cy="93" r="5" fill="#fbbf24"/>
+              <circle cx="126" cy="93" r="5" fill="#34d399"/>
+              <rect class="hi-tab" x="150" y="86" width="64" height="14" rx="7"/>
+              <rect class="hi-lineno" x="92" y="134" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:0"><rect class="hi-pink" x="120" y="134" width="70" height="8" rx="4"/><rect class="hi-blue" x="198" y="134" width="90" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="156" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:1"><rect class="hi-cyan" x="136" y="156" width="50" height="8" rx="4"/><rect class="hi-muted" x="192" y="156" width="120" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="178" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:2"><rect class="hi-blue" x="152" y="178" width="100" height="8" rx="4"/><rect class="hi-pink" x="260" y="178" width="40" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="200" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:3"><rect class="hi-muted" x="152" y="200" width="60" height="8" rx="4"/><rect class="hi-cyan" x="220" y="200" width="80" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="222" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:4"><rect class="hi-pink" x="136" y="222" width="30" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="244" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:5"><rect class="hi-blue" x="136" y="244" width="90" height="8" rx="4"/><rect class="hi-cyan" x="234" y="244" width="60" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="266" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:6"><rect class="hi-muted" x="152" y="266" width="130" height="8" rx="4"/></g>
+              <rect class="hi-lineno" x="92" y="288" width="12" height="8" rx="3"/>
+              <g class="hi-line" style="--i:7"><rect class="hi-pink" x="120" y="288" width="24" height="8" rx="4"/></g>
+              <rect class="hi-cursor" x="148" y="287" width="3" height="12" rx="1"/>
+            </g>
+
+            <g class="hi-badge" style="--d:0s">
+              <circle class="hi-surface hi-badge-bg" cx="418" cy="92" r="32"/>
+              <svg x="394" y="68" width="48" height="48" viewBox="0 0 48 48" class="hi-icon">
+                <path d="M14 37h21a8 8 0 0 0 1.5-15.9A12 12 0 0 0 13.4 19.2 9 9 0 0 0 14 37z"/>
+                <path d="M24 33V23M19.5 27.5 24 23l4.5 4.5"/>
+              </svg>
+            </g>
+            <g class="hi-badge" style="--d:-1.5s">
+              <circle class="hi-surface hi-badge-bg" cx="404" cy="330" r="32"/>
+              <svg x="380" y="306" width="48" height="48" viewBox="0 0 48 48" class="hi-icon">
+                <path d="M8 8v32h32"/>
+                <path class="hi-trend" d="M13 30l8-7 6 3 11-10M32 16h6v6"/>
+              </svg>
+            </g>
+            <g class="hi-badge" style="--d:-3s">
+              <circle class="hi-surface hi-badge-bg" cx="66" cy="286" r="32"/>
+              <svg x="42" y="262" width="48" height="48" viewBox="0 0 48 48" class="hi-icon">
+                <path d="M18 17l-7 7 7 7M30 17l7 7-7 7M27 14l-6 20"/>
+              </svg>
+            </g>
+
+            <path class="hi-spark hi-pink" style="--d:0s" d="M112 42l2.5 7.5L122 52l-7.5 2.5L112 62l-2.5-7.5L102 52l7.5-2.5z"/>
+            <path class="hi-spark hi-cyan" style="--d:-1s" d="M452 196l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
+            <path class="hi-spark hi-blue" style="--d:-2s" d="M34 150l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
+          </svg>
         </div>
       </div>
     </section>
@@ -161,7 +221,7 @@
           </article>
           <article class="card glow project reveal">
             <h3>Pomodoro App</h3>
-            <p>This productivity tool implements the Pomodoro Technique, breaking work into intervals with customizable settings for themes and fonts. It helps users maintain focus and manage their time efficiently, making it ideal for students, professionals, and anyone seeking to boost productivity. The app features session tracking, notifications, and a clean, intuitive interface. Try it <a href="https://divident.github.io/pomodoro" target="_blank" rel="noopener">here</a>.</p>
+            <p>This productivity tool implements the Pomodoro Technique, breaking work into intervals with customizable settings for themes and fonts. It helps users maintain focus and manage their time efficiently, making it ideal for students, professionals, and anyone seeking to boost productivity. The app features session tracking, notifications, and a clean, intuitive interface. <a href="https://divident.github.io/pomodoro" target="_blank" rel="noopener">Try the Pomodoro App</a>.</p>
             <ul class="tags"><li>Productivity</li><li>Notifications</li></ul>
             <a class="btn btn-small" href="https://divident.github.io/pomodoro" target="_blank" rel="noopener">Live demo</a>
           </article>
